@@ -2,6 +2,7 @@ import ID_NAME from '../constants';
 import '../SCSS/View.scss';
 
 export default class View {
+	
   constructor() {
     this.$app = document.getElementById('app');
   }
