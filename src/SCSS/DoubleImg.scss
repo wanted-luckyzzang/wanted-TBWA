@@ -1,0 +1,137 @@
+.owl-carousel .owl-loaded{ 
+  display: block;
+}
+
+.owl-carousel { 
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage {
+  touch-action: manipulation;
+  position: relative;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.home_contents_brand .incont .link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  outline-width: 1px;
+}
+
+.home_contents_brand .incont .link>img {
+  width: 100%;
+}
+
+.real_img.pc {
+  display: block;
+  transition: transform .2s ease-out 0s;
+  -webkit-transition: transform .2s ease-out 0s;
+}
+
+.link>img.pc {
+  width: 100%;
+  display: block;
+}
+
+.real_img{ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.real_img:hover {
+  background-color: red;
+}
+
+.name {
+  top: 17%;
+  font-size: 1.2rem;
+  line-height: 31px;
+  font-weight: 800;
+  letter-spacing: -.33px;
+  color: #222;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.desc {
+  top: 36%;
+  font-size: 0.8rem;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -.21px;
+  color: #222;
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  font-weight: 550;
+}
+
+.more {
+  width: 23%;
+  height: 45px;
+  margin: 25px auto 0;
+  padding: 0 20px;
+  border-radius: 23px;
+  font-size: 0.85rem;
+  line-height: 45px;
+  letter-spacing: -.21px;
+  color: #222;
+  display: block;
+  border: #222 1px solid;
+  font-weight: 400;
+}
+
+.link:hover .real_img.pc {
+  transform: scale(1.05);
+}

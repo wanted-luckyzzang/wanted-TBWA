@@ -1,68 +1,73 @@
-.footer_wrap {
-  background: #222;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 60px;
-  margin-top: 0!important;
-  flex-direction: column;
-
-  .footer_inner {
-    margin: 0;
+ 
+  .footer {
     padding: 80px 0;
     width: auto;
     position: relative;
     content: '';
     display: block;
     clear: both;
+    max-width: 1240px;
+    margin: 0 auto;
 
     .sect_sns {
       margin-left: 0;
       position: relative;
-      padding: 0;
+      padding: 0 0 15px 0;
       margin: 0;
       border: none;
       background: 0 0;
       outline: 0;
       cursor: pointer;
-      float: left;
-      display: block;
+      display: flex;
 
-      .sns_f{
+    
+      .sns f{
         width: 32px;
         height: 32px;
-      
-        & > span {
-          background: url('../Images/kukka.png') no-repeat -1150px -612px;
-          width: 48px;
-          height: 48px;
-        }
       }
+      
+        .sns.f::before {
+          background: url('../Images/kukka.png');
+          width: 32px;
+          height: 32px;
+          margin: 0;
+          content: '';
+          display: block;
+          background-position: -42px -775px;
+        }
 
-      .sns_i{
+      .sns i{
         width: 32px;
         height: 32px;
-
-        .blind::before {
+      }
+      
+        .sns.i::before {
           background: url('../Images/kukka.png');
           background-position: -1214px -438px;
           width: 32px;
           height: 32px;
+          margin: 0;
+          content: '';
+          display: block;
           background-size: 1252px 845px;
+          margin-left: 20px;
         }
-      }
 
-      .sns_y{
+      .sns y{
         width: 32px;
         height: 32px;
-
-        .blind::before {
+      }
+      
+        .sns.y::before {
           background: url('../Images/kukka.png');
           background-position: -1164px -685px;
           width: 32px;
           height: 32px;
           background-size: 1252px 845px;
+          content: '';
+          display: block;
+          margin-left: 20px;
         }
-      }
     }
 
     .contact {
@@ -79,6 +84,7 @@
         font-weight: 500;
         letter-spacing: -.33px;
         color: #f7f7f7;
+        font-weight: 600;
       }
       
       .f {
@@ -90,6 +96,7 @@
         font-weight: 300;
         letter-spacing: -.33px;
         color: #f7f7f7;
+        font-weight: 600;
       }
 
       .s {
@@ -125,8 +132,7 @@
       float: left;
       font-size: 12px;
       line-height: 16px;
-      font-weight: 600;
-      margin-top: -5px;
+      margin-top: 0px;
 
       & > a {
         padding: 0 20px;
@@ -146,6 +152,7 @@
         margin: 0;
         height: 36px;
         text-decoration: none;
+        font-weight: 600;
       }
     }
 
@@ -165,10 +172,6 @@
         background: url('../Images/kukka.png') no-repeat 0 -612px;
         width: 150px;
         height: 63px;
-        background-position: 0 -612px;
-        width: 150px;
-        height: 63px;
-        background-size: 1252px 845px;
         margin: 0;
         padding: 0;
         outline-width: 1px;
@@ -265,7 +268,7 @@
   .link+.link {
     margin-left: 25px;
   }
-}
+
 
 .blind {
   position: absolute;
@@ -276,3 +279,7 @@
   height: 1px;
   cursor: pointer;
 }
+
+
+
+
