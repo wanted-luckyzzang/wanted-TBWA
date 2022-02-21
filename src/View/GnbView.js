@@ -21,7 +21,7 @@ export default class GnbView {
 					<img src=${logo} alt='logoIcon'/>
 				</a>
 			</div>
-			<div>
+			<div class="buttonList-wrapper">
 				<ul class="buttonList">
 					${this.gnbObj.buttonText
             .map(
