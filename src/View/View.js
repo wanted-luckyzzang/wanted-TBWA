@@ -2,7 +2,6 @@ import ID_NAME from '../constants';
 import '../SCSS/View.scss';
 
 export default class View {
-	
   constructor() {
     this.$app = document.getElementById('app');
   }
@@ -24,6 +23,7 @@ export default class View {
 			</section>
 			<footer>
 				<div id=${ID_NAME.pageInfo}></div>
+				<div id=${ID_NAME.popup}></div>
 			</footer>
 		`;
   }
