@@ -1,4 +1,4 @@
-import CLASS_NAME from '../constants';
+import ID_NAME from '../constants';
 
 export default class View {
   constructor() {
@@ -7,24 +7,25 @@ export default class View {
 
   render() {
     this.template();
+    console.log(`${ID_NAME.carousel}`);
   }
 
   template() {
     this.$app.innerHTML = `
 			<header>
-				<div id=${CLASS_NAME.gnb}>
+				<div id=${ID_NAME.gnb}>
 				</div>
 			</header>
 			<section>
-			<div id=${CLASS_NAME.youtube}>
+			<div id=${ID_NAME.youtube}>
 			</div>
-			<div id=${CLASS_NAME.carousel}>
+			<div id=${ID_NAME.carousel}>
 			</div>
-			<div id=${CLASS_NAME.doubleImg}>
+			<div id=${ID_NAME.doubleImg}>
 			</div>
 			</section>
 			<footer>
-			<div id=${CLASS_NAME.pageInfo}>
+			<div id=${ID_NAME.pageInfo}>
 			</div>
 			</footer>
 		`;
