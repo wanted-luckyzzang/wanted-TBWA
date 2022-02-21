@@ -10,19 +10,16 @@ header {
       align-items: center;
       width: 1120px;
       padding-bottom: 15px;
-      position: relative;
       .logo {
         margin-right: 20px;
       }
       .buttonList-wrapper {
         .buttonList {
           display: flex;
-          position: fixed;
-          top: 35px;
-          left: 360px;
+          height: 50px;
           .button {
-            padding: 10px;
-            margin: 0 15px;
+            padding: 20px 0px 0px 0px;
+            margin: 0 25px;
             font-size: 18px;
             cursor: pointer;
             &:hover {
