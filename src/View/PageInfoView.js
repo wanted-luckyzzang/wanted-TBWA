@@ -1,9 +1,9 @@
-import CLASS_NAME from '../constants';
+import ID_NAME from '../constants';
 import "../SCSS/PageInfo.scss";
 
 export default class PageInfoView {
   constructor() {
-    this.$pageInfo = document.getElementById(CLASS_NAME.pageInfo);
+    this.$pageInfo = document.getElementById(ID_NAME.pageInfo);
   }
 
   render() {
@@ -15,15 +15,15 @@ export default class PageInfoView {
       <div class="footer_wrap">
         <div class="footer_inner">
           <nav class="sect_sns">
-            <a class="sns_f" href="https://ko-kr.facebook.com/kukka.kr/" target="_blank">
+            <a class="sns f" href="https://ko-kr.facebook.com/kukka.kr/" target="_blank">
               <span class="blind">
               </span>
             </a>
-            <a class="sns_i" href="https://www.instagram.com/kukkakorea/">
+            <a class="sns i" href="https://www.instagram.com/kukkakorea/">
               <span class="blind">
               </span>
             </a>
-            <a class="sns_y" href="https://www.youtube.com/channel/UC_zQakXCUPvjcfsU067zyCQ?view_as=subscriber" target="_blank">
+            <a class="sns y" href="https://www.youtube.com/channel/UC_zQakXCUPvjcfsU067zyCQ?view_as=subscriber" target="_blank">
               <span class="blind">
               </span>
             </a>
