@@ -18,7 +18,7 @@ export default class DoubleImg {
       <div class="owl-carousel owl-loaded owl-drag">
         <div class="owl-stage-outer">
           <div class="owl-stage">
-            <div class="owl-item active" style="width: 50%; height: 165px">
+            <div class="owl-item active" style="width: 50%; height: 20%">
               <div class="item">
                 <a href="https://kukka.kr/brand/story/" class="link">
                   <img class="pc" src='${this.doubleObj.LeftSideText[6]}'/>
@@ -34,7 +34,7 @@ export default class DoubleImg {
                 </a>
               </div>
             </div>
-            <div class="owl-item active" style="width: 50%; height: 165px">
+            <div class="owl-item active" style="width: 50%; height: 20%">
               <div class="item">
                 <a href="https://kukka.kr/brand/showroom/" class="link">
                   <img class="pc" src='${this.doubleObj.RightSideText[5]}'/>
