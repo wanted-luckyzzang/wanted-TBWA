@@ -1,5 +1,5 @@
 import CLASS_NAME from '../constants';
-import "../SCSS/PageInfoModel.scss";
+import "../SCSS/PageInfo.scss";
 
 export default class PageInfoView {
   constructor() {
