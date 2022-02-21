@@ -1,4 +1,4 @@
-const CLASS_NAME = {
+const ID_NAME = {
   gnb: 'gnb',
   youtube: 'youtube',
   carousel: 'carousel',
@@ -7,4 +7,4 @@ const CLASS_NAME = {
   popup: 'popup',
 };
 
-export default CLASS_NAME;
+export default ID_NAME;

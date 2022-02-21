@@ -12,19 +12,19 @@ export default class View {
   template() {
     this.$app.innerHTML = `
 			<header>
-				<div classname=${CLASS_NAME.gnb}>
+				<div id=${CLASS_NAME.gnb}>
 				</div>
 			</header>
 			<section>
-			<div classname=${CLASS_NAME.youtube}>
+			<div id=${CLASS_NAME.youtube}>
 			</div>
-			<div classname=${CLASS_NAME.carousel}>
+			<div id=${CLASS_NAME.carousel}>
 			</div>
-			<div classname=${CLASS_NAME.doubleImg}>
+			<div id=${CLASS_NAME.doubleImg}>
 			</div>
 			</section>
 			<footer>
-			<div classname=${CLASS_NAME.pageInfo}>
+			<div id=${CLASS_NAME.pageInfo}>
 			</div>
 			</footer>
 		`;
