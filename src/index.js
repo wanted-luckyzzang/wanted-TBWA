@@ -1,6 +1,6 @@
-import CarouselView from './View/CarouselView';
+import GnbView from './View/GnbView';
 import View from './View/View';
 
 console.log('hello');
 new View().render();
-new CarouselView().render();
+new GnbView().render();
