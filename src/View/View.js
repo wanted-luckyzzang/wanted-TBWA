@@ -1,6 +1,7 @@
 import ID_NAME from '../constants';
 
 export default class View {
+	
   constructor() {
     this.$app = document.getElementById('app');
   }
