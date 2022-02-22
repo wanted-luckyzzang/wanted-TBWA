@@ -6,7 +6,7 @@
 - 기간 : 22.02.21 ~ 22.02.23
 
 ## 2. 배포 링크
-
+https://wanted-tbwa.netlify.app/
 ## 3. 팀원 소개
 
 <table>
@@ -30,11 +30,11 @@
 
 - Global Navigation Bar
 - Youtube Iframe
+- popup
 
 ⚜ 안병진
 
 - Carousel
--
 
 ⚜ 박민주
 
@@ -49,7 +49,14 @@
 ## 6. 디렉토리 구조
 
 ```bash
-
+.
+├── Controller
+├── Images
+├── Model
+├── SCSS
+├── View
+├── constants.js
+└── index.js
 ```
 
 ## 7. 설치 및 실행 방법
