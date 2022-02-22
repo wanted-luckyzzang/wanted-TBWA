@@ -49,7 +49,14 @@
 ## 6. 디렉토리 구조
 
 ```bash
-
+.
+├── Controller
+├── Images
+├── Model
+├── SCSS
+├── View
+├── constants.js
+└── index.js
 ```
 
 ## 7. 설치 및 실행 방법
