@@ -1,4 +1,42 @@
-#popup {
-  .popup {
+footer {
+  position: relative;
+  #popup {
+    .container {
+      position: fixed;
+      z-index: 999;
+      right: 20px;
+      bottom: 30px;
+      img {
+        width: 260px;
+        height: 360px;
+      }
+      .icon-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #222222;
+        position: absolute;
+        width: 260px;
+        top: 360px;
+        .checkbox {
+          input {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+        .text {
+          color: white;
+          padding-right: 40px;
+          padding-top: 3px;
+        }
+        .x-icon {
+          background: url('../Images/kukka.png') no-repeat 0 -775px;
+          width: 32px;
+          height: 32px;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }

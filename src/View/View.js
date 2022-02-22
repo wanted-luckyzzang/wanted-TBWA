@@ -8,7 +8,6 @@ export default class View {
 
   render() {
     this.template();
-    console.log(`${ID_NAME.carousel}`);
   }
 
   template() {
