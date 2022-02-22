@@ -1,12 +1,11 @@
 import ID_NAME from '../constants';
 import DoubleImgModel from '../Model/DoubleImgModel';
-import "../SCSS/DoubleImg.scss";
+import '../SCSS/DoubleImg.scss';
 
 export default class DoubleImg {
   constructor() {
     this.$doubleImg = document.getElementById(ID_NAME.doubleImg);
     this.doubleObj = new DoubleImgModel();
-    console.log(this.doubleObj.LeftSideText[6]);
   }
 
   render() {
@@ -53,6 +52,6 @@ export default class DoubleImg {
           </div>
         </div>
       </div>
-    `
+    `;
   }
 }
