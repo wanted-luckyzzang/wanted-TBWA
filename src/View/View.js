@@ -2,14 +2,12 @@ import ID_NAME from '../constants';
 import '../SCSS/View.scss';
 
 export default class View {
-	
   constructor() {
     this.$app = document.getElementById('app');
   }
 
   render() {
     this.template();
-    console.log(`${ID_NAME.carousel}`);
   }
 
   template() {
