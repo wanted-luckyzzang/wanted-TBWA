@@ -42,50 +42,61 @@ export default class CarouselView {
 
   static Frame(props) {
     return `
-          <div class="frame">
-            <div class="bigImg" style="background-image: url(${
-              props[0].imageUrl
-            })">    
-                <div class="bigImageInfo">
-                    <div class="bigDecs">${props[0].decs}</div>
-                    <div class="bigName">${
-                      props[0].productName.split('(')[0]
-                    } 클래스 자세히 보기 ></div>
+    <div class="frame">
+            <a href=${
+              props[0].href
+            } style="text-decoration: none; color: black;">   
+                <div class="bigImg" style="background-image: url(${
+                  props[0].imageUrl
+                })"> 
+                    <div class="bigImageInfo">
+                        <div class="bigDecs">${props[0].decs}</div>
+                            <div class="bigName">${
+                              props[0].productName.split('(')[0]
+                            } 클래스 자세히 보기 ></div>
+                    </div>
                 </div>
-            </div>
+            </a>
             <div class="smallImgSection">
-                <div class="smallImg">
-                    <div class="photo" style="background-image: url(${
-                      props[1].imageUrl
-                    })">
-                    </div>
+                <a href=${
+                  props[1].href
+                } style="text-decoration: none; color: black;">
+                    <div class="smallImg">
+                        <div class="photo" style="background-image: url(${
+                          props[1].imageUrl
+                        })"></div>
                     <div class="productInfo">
-                        <div class="productName">${props[1].productName}</div>
+                      <div class="productName">${props[1].productName}</div>
                         <div class="productPrice">${props[1].productPrice}</div>
-                        <div class="tagList">
-                            ${props[1].shopTag
-                              .map((el) => `<div>${el}</div>`)
-                              .join(' ')}
+                            <div class="tagList">
+                                ${props[1].shopTag
+                                  .map((el) => `<div>${el}</div>`)
+                                  .join(' ')}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="line" ></div>
-                <div class="smallImg">
-                    <div class="photo" style="background-image: url(${
-                      props[2].imageUrl
-                    })"></div>
-                    <div class="productInfo">
-                        <div class="productName">${props[2].productName}</div>
+                </a>
+            <div class="line" ></div>
+              <a href=${
+                props[1].href
+              } style="text-decoration: none; color: black;">
+              <div class="smallImg">
+                  <div class="photo" style="background-image: url(${
+                    props[2].imageUrl
+                  })"></div>
+                  <div class="productInfo">
+                    <div class="productName">${props[2].productName}</div>
                         <div class="productPrice">${props[2].productPrice}</div>
-                        <div class="tagList">
-                            ${props[2].shopTag
-                              .map((el) => `<div>${el}</div>`)
-                              .join(' ')}
+                            <div class="tagList">
+                                ${props[2].shopTag
+                                  .map((el) => `<div>${el}</div>`)
+                                  .join(' ')}
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-          </div>
-        `;
+        </div>
+    `;
   }
 }
