@@ -78,7 +78,7 @@ export default class CarouselView {
                 </a>
             <div class="line" ></div>
               <a href=${
-                props[1].href
+                props[2].href
               } style="text-decoration: none; color: black;">
               <div class="smallImg">
                   <div class="photo" style="background-image: url(${
