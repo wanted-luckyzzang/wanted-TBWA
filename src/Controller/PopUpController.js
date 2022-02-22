@@ -5,6 +5,9 @@ export default class PopUpController {
   constructor() {
     this.popUpObject = new PopUpModel();
     this.PopUpView = new PopUpView(this.popUpObject);
+  }
+
+  init() {
     this.PopUpView.render();
     this.bindingEvent();
   }
