@@ -22,6 +22,7 @@ export default class View {
 			</section>
 			<footer>
 				<div id=${ID_NAME.pageInfo}></div>
+				<div id=${ID_NAME.popup}></div>
 			</footer>
 		`;
   }
